@@ -1,0 +1,17 @@
+{
+  "name": "movie-search",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.23.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "open": "^9.1.0",
+    "pg": "^8.11.0",
+    "pg-promise": "^11.4.3",
+    "sequelize": "^6.31.1"
+  }
+}

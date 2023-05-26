@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trending Movies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Movie Search</h1>
+    <a href="index.html" class="custom-link">Home</a>
+  </header>
+  <main>
+    <div id="trending-container">
+      <h2>Trending Movies</h2>
+      <button id="trending-day-button">Today</button>
+      <button id="trending-week-button">This Week</button>
+    </div>
+    <div id="results-container">
+      <h2>Results</h2>
+      <div id="movie-results"></div>
+    </div>
+  </main>
+
+  <div id="trailer-modall">
+    <div class="modal-contentt">
+      <span class="close">&times;</span>
+      <iframe id="trailer-iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <div class="rating">
+        <span class="star" data-rating="1">&#9733;</span>
+        <span class="star" data-rating="2">&#9733;</span>
+        <span class="star" data-rating="3">&#9733;</span>
+        <span class="star" data-rating="4">&#9733;</span>
+        <span class="star" data-rating="5">&#9733;</span>
+      </div>
+      <button id="submit-rating">Submit Rating</button>
+      <button class="delete-rating">Delete Rating</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="trending.js"></script>
+</body>
+
+</html>

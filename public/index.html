@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Movie Search</h1>
+  </header>
+
+  <main>
+    <!-- Search container -->
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search movies...">
+      <button id="search-button">Search</button>
+      <a href="trending.html">Trending Movies</a>
+    </div>
+
+
+
+    <!-- Results container -->
+    <div id="results-container">
+      <h2>Results</h2>
+      <div id="movie-results"></div>
+    </div>
+    <hr>
+
+    <!-- Upcoming movies category -->
+    <div class="categories-container">
+      <div class="category">
+        <h2>Upcoming</h2>
+        <div id="upcoming-movies" class="movie-results slider"></div>
+        <div class="slider-navigation">
+          <button class="prev-arrow"></button>
+          <button class="next-arrow"></button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Top rated movies category -->
+    <div class="categories-container">
+      <div class="category">
+        <h2>Top Rated</h2>
+        <div id="top-rated-movies" class="movie-results slider"></div>
+        <div class="slider-navigation">
+          <button class="prev-arrow"></button>
+          <button class="next-arrow"></button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Popular movies category -->
+    <div class="categories-container">
+      <div class="category">
+        <h2>Popular</h2>
+        <div id="popular-movies" class="movie-results slider"></div>
+        <div class="slider-navigation">
+          <button class="prev-arrow"></button>
+          <button class="next-arrow"></button>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </main>
+
+  <div id="loader" class="loader hide"></div>
+
+  <!-- Trailer modal -->
+  <div id="trailer-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe id="trailer-iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <div class="rating">
+        <span class="star" data-rating="1">&#9733;</span>
+        <span class="star" data-rating="2">&#9733;</span>
+        <span class="star" data-rating="3">&#9733;</span>
+        <span class="star" data-rating="4">&#9733;</span>
+        <span class="star" data-rating="5">&#9733;</span>
+      </div>
+      <button class="submit-rating">Submit Rating</button>
+      <button class="delete-rating">Delete Rating</button>
+
+    </div>
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="index.js"></script> <!-- Main script -->
+  <script src="../controller.js"></script> <!-- Controller script -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Axios library -->
+</body>
+
+</html>
